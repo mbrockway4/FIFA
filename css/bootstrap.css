@@ -4,12 +4,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+#link{
+  color:white;
+}
+
+
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 body {
+  color: white;
   margin: 0;
 }
 article,
@@ -34,6 +41,10 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+table.db-table    { border-right:4px solid #ccc; border-bottom:2px solid #ccc;  width:100%; font-size: 12px; text-transform: capitalize;}
+table.db-table th { background:#eee; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+table.db-table td { padding:3px; border-left:1px solid #ccc; border-top:1px solid #ccc; text-transform: capitalize; }
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -42,11 +53,10 @@ audio:not([controls]) {
 template {
   display: none;
 }
-form{
-  
-}
+
 a {
   background-color: transparent;
+  color:white;
 }
 a:active,
 a:hover {
@@ -118,7 +128,9 @@ select,
 textarea {
   margin: 0;
   font: inherit;
-  color: inherit;
+  color:black;
+  font:black;
+
 }
 button {
   overflow: visible;
@@ -1079,6 +1091,13 @@ th {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+.btn-bot{
+    position:fixed;
+left: 50%;
+bottom: 3%;
+transform: translate(-50%, -50%);
+
+}
 html {
   font-size: 10px;
 
@@ -1086,20 +1105,21 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 25px;
   line-height: 1.42857143;
   background-color: #2f2424;
+  color:white;
 }
 input,
 button,
 select,
 textarea {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 25px;
   line-height: inherit;
+  color:black;
 }
 a {
-  color: #337ab7;
+  color: white;
   text-decoration: none;
 }
 a:hover,
@@ -1289,8 +1309,8 @@ h3,
   right:0;
   height: 15%;
   width: 15%;
-
 }
+
 h4,
 .h4 {
   font-size: 18px;
@@ -1314,8 +1334,9 @@ p {
 }
 h1
 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Anton', sans-serif;
   font-weight: 'bolder';
+  text-align: center;
 }
 @media (min-width: 768px) {
   .lead {
@@ -1638,7 +1659,7 @@ pre code {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 5px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -2297,6 +2318,7 @@ th {
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #ddd;
+  color: green
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -3026,7 +3048,6 @@ select[multiple].input-lg {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -5481,7 +5502,8 @@ button.list-group-item-danger.active:focus {
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-  padding: 15px;
+  background-color:#2f2424;
+  color:white;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -6779,4 +6801,16 @@ button.close {
     display: none !important;
   }
 }
+
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}
+
+
 /*# sourceMappingURL=bootstrap.css.map */
